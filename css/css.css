@@ -259,68 +259,6 @@ a:hover {
     font-size: 14px;
 }
 
-@media only screen and (max-width: 768px) {
-    html, body {
-        font-size: 15px !important;
-    }
-    .header__logo {
-        width: 30%;
-        height: auto;
-        position: absolute;
-        top: 10px;
-        left: 20px;
-    }
-    .intro__body {
-        position: relative;
-        margin-bottom: 20px;
-        top: 10px;
-        left: 0px;
-        right: 10px;
-    }
-    .intro__bg-image {
-        display: none;
-    }
-    .intro__title {
-        font-size: 25px !important;
-    }
-    .intro__line img {
-        width: 190px !important;
-        margin-top: 0px;
-        margin-bottom: 6px;
-    }
-    .intro__content{
-        font-size: 13px;
-    }
-    .application__appstore {
-        margin-bottom: 10px;
-    }
-    .application__appstore span {
-        font-size: 15px !important;
-        margin-left: 10px;
-    }
-    .application__googleplay span {
-        font-size: 15px !important;
-        margin-left: 10px;
-    }
-    .footer__body--second a {
-        width: 20%;
-        margin-left: 8px !important;
-        margin-right: 8px !important;
-    }
-    .footer__body--first a {
-        width: 7%;
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-    .footer__body--second {
-        font-size: 13px;
-        margin-top: 13px !important;
-        margin-bottom: 5px !important;
-    }
-    .footer__body--third {
-        font-size: 10px !important;
-    }
-}
 
 @media only screen and (max-width: 992px) {
     html, body {
@@ -356,5 +294,69 @@ a:hover {
     }
     .footer__body--third {
         font-size: 11px;
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    html, body {
+        font-size: 15px !important;
+    }
+    .header__logo {
+        width: 30%;
+        height: auto;
+        position: absolute;
+        top: 10px;
+        left: 20px;
+    }
+    .intro__body {
+        position: relative;
+        margin-bottom: 20px;
+        top: 10px;
+        left: 0px;
+        right: 10px;
+    }
+    .intro__bg-image {
+        display: none;
+    }
+    .intro__title {
+        font-size: 25px !important;
+    }
+    .intro__line img {
+        width: 190px !important;
+        margin-top: 0px;
+        margin-bottom: 6px;
+    }
+    .intro__content{
+        font-size: 15px;
+    }
+    .application__appstore {
+        margin-bottom: 10px;
+    }
+    .application__appstore span {
+        font-size: 15px !important;
+        margin-left: 10px;
+    }
+    .application__googleplay span {
+        font-size: 15px !important;
+        margin-left: 10px;
+    }
+    .footer__body--second a {
+        width: 20%;
+        margin-left: 8px !important;
+        margin-right: 8px !important;
+    }
+    .footer__body--first a {
+        width: 7%;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .footer__body--second {
+        font-size: 15px;
+        margin-top: 13px !important;
+        margin-bottom: 5px !important;
+    }
+    .footer__body--third {
+        font-size: 10px !important;
     }
 }

@@ -288,6 +288,9 @@ a:hover {
         margin-top: 0px;
         margin-bottom: 6px;
     }
+    .intro__content{
+        font-size: 13px;
+    }
     .application__appstore {
         margin-bottom: 10px;
     }

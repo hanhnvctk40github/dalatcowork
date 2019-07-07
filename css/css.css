@@ -11,11 +11,6 @@ html, body {
 a:hover {
     text-decoration: none;
 }
-/* 
-.container {
-    padding-right: 0;
-    padding-left: 0;
-} */
 
 /* header */
 
@@ -24,6 +19,10 @@ a:hover {
     margin: 0;
     border: 1px solid #414042;
     border-bottom: none;
+    height: 100vh;
+    background-image: url(../images/background/bg-1.jpg);
+    background-position: center;
+    background-size: cover;
 }
 
 .header__bg-image {
@@ -61,6 +60,11 @@ a:hover {
     border: 1px solid #414042;
     border-top: none;
     border-bottom: none;
+    height: 60vh;
+    background-image: url(../images/background/bg-2-1.jpg);
+    background-position: right;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
 }
 
 .intro__line img {
@@ -94,6 +98,10 @@ a:hover {
     border: 1px solid #414042;
     border-top: none;
     border-bottom: none;
+    height: 60vh;
+    background-image: url(../images/background/bg-3-1.jpg);
+    background-position: left;
+    background-size: cover;
 }
 
 .product__background img {
@@ -172,12 +180,12 @@ a:hover {
     width: 100%;
 }
 
-.application__appstore a {
+.application__appstore-a {
     width: 20%;
 }
 
 .application__appstore-text {
-    width: 80% !important;
+    width: 80%;
 }
 
 .application__appstore img {
@@ -191,12 +199,12 @@ a:hover {
     color: #414042;
 }
 
-.application__googleplay a {
+.application__googleplay-a {
     width: 20%;
 }
 
 .application__googleplay-text {
-    width: 80% !important;
+    width: 80% ;
 }
 
 .application__googleplay img {
@@ -265,7 +273,7 @@ a:hover {
 }
 
 
-@media only screen and (max-width: 992px) {
+/* @media only screen and (max-width: 992px) {
     html, body {
         font-size: 18px;
     }
@@ -300,19 +308,28 @@ a:hover {
     .footer__body--third {
         font-size: 11px;
     }
-}
+} */
 
-
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 0px) and (max-width: 576px) {
     html, body {
-        font-size: 15px !important;
+        font-size: 15px;
+    }
+    .header{
+        height: 65vh;
     }
     .header__logo {
-        width: 30%;
+        width: 45%;
         height: auto;
         position: absolute;
         top: 10px;
         left: 20px;
+    }
+    .intro{
+        height: 40vh;
+        background-image: url(../images/background/bg-2-2.jpg);
+        background-size: auto 75%;
+        background-position: bottom right;
+
     }
     .intro__body {
         position: relative;
@@ -325,31 +342,81 @@ a:hover {
         display: none;
     }
     .intro__title {
-        font-size: 25px !important;
+        font-size: 25px;
     }
     .intro__line img {
-        width: 190px !important;
+        width: 190px ;
         margin-top: 0px;
         margin-bottom: 6px;
     }
     .intro__content{
         font-size: 15px;
     }
+
+    .product{
+        background-image: url(../images/background/bg-3-2.jpg);
+        height: 60vh;
+    }
+    
+    .product__body {
+        display: block;
+    }  
+    .product__dalatcowork {
+        width: 100%;
+        margin-bottom: 10px;
+    } 
+    
+    .product__dalatcowork-BC a {
+        width: 65%
+    }
+    
+    .product__dalatcowork-AM a {
+        width: 65%
+    }
+
+    .application {
+        width: 100%;
+        float: left;
+        align-items: center;
+    }
     .application__appstore {
+        justify-content: center;
         margin-bottom: 10px;
     }
+    
+    .application__appstore-a {
+        width: 10%;
+    }
+
+    .application__appstore-text {
+        width: 50% ;
+    }
     .application__appstore span {
-        font-size: 15px !important;
+        font-size: 20px ;
         margin-left: 10px;
+    }
+    .application__googleplay {
+        margin-bottom: 10px;
+        justify-content: center;
+    }
+    
+    .application__googleplay-a {
+        width: 10%;
+    }
+
+    .application__googleplay-text {
+        width: 50% ;
     }
     .application__googleplay span {
-        font-size: 15px !important;
+        font-size: 20px ;
         margin-left: 10px;
     }
+
+
     .footer__body--second a {
         width: 20%;
-        margin-left: 8px !important;
-        margin-right: 8px !important;
+        margin-left: 8px ;
+        margin-right: 8px ;
     }
     .footer__body--first a {
         width: 7%;
@@ -358,10 +425,252 @@ a:hover {
     }
     .footer__body--second {
         font-size: 15px;
-        margin-top: 13px !important;
-        margin-bottom: 5px !important;
+        margin-top: 13px ;
+        margin-bottom: 5px ;
     }
     .footer__body--third {
-        font-size: 10px !important;
+        font-size: 10px ;
+    }
+}
+@media only screen and (min-width: 577px) and ( max-width: 768px)  {
+    html, body {
+        font-size: 18px;
+    }
+    .header{
+        height: 70vh;
+    }
+    .header__logo {
+        width: 45%;
+        height: auto;
+        position: absolute;
+        top: 10px;
+        left: 20px;
+    }
+    .intro{
+        height: 38vh;
+        background-image: url(../images/background/bg-2-2.jpg);
+        background-size: auto 75%;
+        background-position: bottom right;
+
+    }
+    .intro__body {
+        position: relative;
+        margin-bottom: 20px;
+        top: 10px;
+        left: 0px;
+        right: 10px;
+    }
+    .intro__bg-image {
+        display: none;
+    }
+    .intro__title {
+        font-size: 30px ;
+    }
+    .intro__line img {
+        width:250px ;
+        margin-top: 0px;
+        margin-bottom: 6px;
+    }
+    .intro__content{
+        font-size: 18px;
+    }
+    .product{
+        background-image: url(../images/background/bg-3-2.jpg)
+    }
+    
+    .product__body {
+        display: block;
+    }  
+    .product__dalatcowork {
+        width: 100%;
+        margin-bottom: 10px;
+    }   
+    .product__dalatcowork-BC a {
+        width: 60%
+    }
+    
+    .product__dalatcowork-AM a {
+        width: 60%
+    }
+    
+
+    .application {
+        width: 100%;
+        float: left;
+        align-items: center;
+    }
+    .application__appstore {
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+    
+    .application__appstore-a {
+        width: 12%;
+    }
+
+    .application__appstore-text {
+        width: 30% ;
+    }
+    .application__appstore span {
+        font-size: 25px ;
+        margin-left: 10px;
+    }
+    .application__googleplay {
+        margin-bottom: 10px;
+        justify-content: center;
+    }
+    
+    .application__googleplay-a {
+        width: 12%;
+    }
+
+    .application__googleplay-text {
+        width: 30% ;
+    }
+    .application__googleplay span {
+        font-size: 25px ;
+        margin-left: 10px;
+    }
+
+
+    .footer__body--second a {
+        width: 20%;
+        margin-left: 8px ;
+        margin-right: 8px ;
+    }
+    .footer__body--first a {
+        width: 7%;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .footer__body--second {
+        font-size: 18px;
+        margin-top: 20px;
+        margin-bottom: 5px ;
+    }
+    .footer__body--third {
+        font-size: 11px ;
+    }
+}
+
+@media only screen and ( min-width: 769px)  and (max-width: 992px) {
+    html, body {
+        font-size: 25px;
+    }
+    .header{
+        height: 70vh;
+    }
+    .header__logo {
+        width: 25%;
+        height: auto;
+        position: absolute;
+        top: 10px;
+        left: 20px;
+    }
+    .intro{
+        height: 60vh;
+        background-image: url(../images/background/bg-2-2.jpg);
+        background-size: auto 75%;
+        background-position: bottom right;
+
+    }
+    .intro__body {
+        position: relative;
+        margin-bottom: 20px;
+        top: 10px;
+        left: 0px;
+        right: 10px;
+    }
+    .intro__bg-image {
+        display: none;
+    }
+    .intro__title {
+        font-size: 35px ;
+    }
+    .intro__line img {
+        width: 250px ;
+        margin-top: 0px;
+        margin-bottom: 6px;
+    }
+    .intro__content{
+        font-size: 25px;
+    }
+
+    .product{
+        background-image: url(../images/background/bg-3-2.jpg);
+        height: 80vh;
+    }
+    
+    .product__body {
+        display: block;
+    }  
+    .product__dalatcowork {
+        width: 100%;
+        margin-bottom: 20px;
+    }   
+    .product__dalatcowork-BC a {
+        width: 60%
+    }
+    
+    .product__dalatcowork-AM a {
+        width: 60%
+    }
+
+    .application {
+        width: 100%;
+        float: left;
+        align-items: center;
+    }
+    .application__appstore {
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+    
+    .application__appstore-a {
+        width: 10%;
+    }
+
+    .application__appstore-text {
+        width: 30% ;
+    }
+    .application__appstore span {
+        font-size: 25px ;
+        margin-left: 10px;
+    }
+    .application__googleplay {
+        margin-bottom: 10px;
+        justify-content: center;
+    }
+    
+    .application__googleplay-a {
+        width: 10%;
+    }
+
+    .application__googleplay-text {
+        width: 30% ;
+    }
+    .application__googleplay span {
+        font-size: 25px ;
+        margin-left: 10px;
+    }
+
+
+    .footer__body--second a {
+        width: 20%;
+        margin-left: 8px ;
+        margin-right: 8px ;
+    }
+    .footer__body--first a {
+        width: 7%;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .footer__body--second {
+        font-size: 25px;
+        margin-top: 13px ;
+        margin-bottom: 5px ;
+    }
+    .footer__body--third {
+        font-size: 15px ;
     }
 }
